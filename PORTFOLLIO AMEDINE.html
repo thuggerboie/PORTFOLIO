@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio Étudiant - SY El Hadji Amedine</title>
+<meta name="description" content="Portfolio étudiant – SY El Hadji Amedine, HTML/CSS moderne, responsive et personnalisé." />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{
+--bg: #f0f4f8; --card: #ffffff; --text: #1b1f3b; --muted: #5c6370; --border: #d1d9e6;
+--primary: #ff6b6b; --primary-600:#e63946; --soft: #ffe5e5; --shadow: 0 10px 24px rgba(0,0,0,.08);
+--radius: 16px; --radius-lg: 22px; --maxw: 1120px;
+}
+@media (prefers-color-scheme: dark){
+:root{
+--bg: #1c1e2a; --card: #2a2c3a; --text: #e0e0e0; --muted: #a0a0a0; --border: #3a3c4a; --soft: #3a0f0f; --shadow: 0 10px 24px rgba(0,0,0,.5);
+}
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:ui-sans-serif, system-ui; background:linear-gradient(180deg, rgba(255,107,107,.06), transparent 30%), var(--bg); color:var(--text);} img{max-width:100%; display:block} a{color:inherit; text-decoration:none} p{line-height:1.6; color:var(--muted)} .container{max-width:var(--maxw); margin-inline:auto; padding:0 20px} .shadow{box-shadow:var(--shadow)} .card{background:var(--card); border:1px solid var(--border); border-radius:var(--radius);} .pill{display:inline-flex; align-items:center; gap:.5rem; padding:.4rem .8rem; border:1px solid var(--border); border-radius:999px; font-size:.9rem; background:var(--soft)} .btn{display:inline-block; padding:.8rem 1rem; border-radius:12px; border:1px solid var(--border); background:var(--card)} .btn.primary{background:var(--primary); color:white; border-color:transparent} .btn.primary:hover{background:var(--primary-600)} header{position:sticky; top:0; z-index:30; backdrop-filter:saturate(180%) blur(10px); background: color-mix(in hsl, var(--card) 80%, transparent); border-bottom:1px solid var(--border);} .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0} .brand{font-weight:700} .menu{display:none; gap:20px} .menu a{color:var(--muted)} .menu a:hover{color:var(--text)} @media(min-width:768px){ .menu{display:flex} } .hero{padding:48px 0} .hero .wrap{display:grid; gap:18px; grid-template-columns: 84px 1fr} .avatar{width:84px; height:84px; border-radius:18px; display:grid; place-items:center; border:1px solid var(--border); overflow:hidden} .avatar img{width:100%; height:100%; object-fit:cover; border-radius:18px} h1{font-size: clamp(28px, 2.6vw, 40px); margin:4px 0 6px} .meta{display:flex; flex-wrap:wrap; gap:12px; margin-top:10px; color:var(--muted); font-size:.95rem} .meta .item{display:inline-flex; align-items:center; gap:8px} section{scroll-margin-top:90px; margin-top:28px} .section-title{font-size: clamp(20px, 2.1vw, 28px); font-weight:800; margin: 18px 0} .grid{display:grid; gap:18px} .grid.cols-2{grid-template-columns:1fr} @media(min-width:860px){ .grid.cols-2{grid-template-columns:1fr 1fr} } .card.pad{padding:22px} .row{display:flex; align-items:flex-start; justify-content:space-between; gap:12px} .row .muted{color:var(--muted); font-size:.95rem} .tags{display:flex; flex-wrap:wrap; gap:8px} .project h3{margin:0 0 6px} .list{margin:.2rem 0 0 .9rem; color:var(--muted)} .contact{display:grid; gap:16px} .contact .socials{display:flex; gap:12px; margin-top:10px} .contact .socials a{display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; border-radius:50%; background:var(--soft); color:var(--primary); font-size:18px; text-decoration:none} @media(min-width:760px){ .contact{grid-template-columns:1fr 1fr} } input, textarea{width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--border); background:var(--card); color:var(--text)} textarea{min-height:120px; resize:vertical} footer{padding:40px 0; color:var(--muted)} @media print{header, .btn, .contact form{display:none !important} body{background:white} .card{break-inside:avoid}}
+#socials .socials {
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+#socials .socials a {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+}
+
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<div class="brand">SY El Hadji Amedine</div>
+<nav class="menu">
+<a href="#about">À propos</a>
+<a href="#education">Formation</a>
+<a href="#skills">Compétences</a>
+<a href="#projects">Projets</a>
+<a href="#experience">Expériences</a>
+<a href="#activities">Activités</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<section class="hero">
+<div class="container">
+<div class="card shadow pad">
+<div class="wrap">
+<div class="avatar">
+<img src="THUGGER.jpg" alt="Photo de SY El Hadji Amedine">
+</div>
+<div>
+            <h1>EL HADJI AMEDINE SY</h1>
+            <p>Étudiant motivé et très curieux, passionné par les nouvelles technologies numériques. Je cherche à développer mes compétences en design et developpement web et en graphisme.</p>
+            <div class="meta">
+  <span class="item"><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</span>
+  <a class="item" href="mailto:syelhadjiamedine@gmail.com"><i class="fas fa-envelope"></i> syelhadjiamedine@gmail.com</a>
+  <a class="item" href="tel:+221772894105"><i class="fas fa-phone"></i> +221 77 289 41 05</a>
+  <a class="btn primary" href="#contact">Me contacter</a>
+</div>
+  </section>
+  <main class="container">
+   <section id="about">
+  <div class="container">
+    <h2 class="section-title">À propos de moi</h2>
+    <div class="about-content">
+      <p>
+        Je m’appelle <strong>SY El Hadji Amedine</strong>, étudiant passionné par le numérique et les nouvelles technologies. 
+        Curieux et motivé, j’aime apprendre et mettre en pratique mes compétences à travers des projets concrets.
+      </p>
+      
+      <p>
+        Mon parcours académique m’a permis d’acquérir des bases solides en <strong>développement web</strong>, 
+        <strong>design d’interface utilisateur (UI/UX)</strong> et <strong>outils de prototypage comme Figma</strong>. 
+        Je m’intéresse particulièrement à la création d’expériences numériques simples, accessibles et intuitives.
+      </p>      
+      <p>
+        Mon objectif est de continuer à progresser dans le domaine du <strong>développement web et du design</strong>, 
+        et de mettre mes compétences au service de projets innovants qui ont un impact positif.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <section id="education">
+      <h2 class="section-title">Formation</h2>
+      <div class="grid cols-2">
+        <div class="card shadow pad">
+          <div class="row">
+            <div>
+              <h3>Licence infographie et design</h3>
+              <div class="muted">Université Amadou Makhtar Mbow de Dakar</div>
+            </div>
+            <div class="muted">2023 – 2026</div>
+          </div>
+          <p>Principales matières : Programmation, Base de données, Développement web.</p>
+        </div>
+        <div class="card shadow pad">
+          <div class="row">
+            <div>
+              <h3>Baccalauréat L2</h3>
+              <div class="muted">Groupe Scolaire Seydou Nourou Tall</div>
+            </div>
+            <div class="muted">2022-2023</div>
+          </div>
+          <p>Spécialité Sciences sociales et Anglais, mention Assez Bien.</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2 class="section-title">Compétences</h2>
+      <div class="grid cols-2">
+        <div class="card shadow pad">
+          <h3>Techniques</h3>
+          <div class="tags">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">Photoshop</span>
+            <span class="pill">Illustrator</span>
+            <span class="pill">UX/UI DESIGN</span>
+            <span class="pill">Motion design</span>
+            <span class="pill">Montage Audio</span>
+            <span class="pill">Cinema 4D</span>
+          </div>
+        </div>
+        <div class="card shadow pad">
+          <h3>Transversales & langues</h3>
+          <div class="tags">
+            <span class="pill">Travail en équipe</span>
+            <span class="pill">Communication</span>
+            <span class="pill">Organisation</span>
+            <span class="pill">Français (C1)</span>
+            <span class="pill">Anglais (C1)</span>
+            <span class="pill">Espagnol (A2)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section id="projects">
+  <div class="container">
+    <h2 class="section-title">Projets & Travaux</h2>
+    <div class="projects">
+      
+      <div class="project-card">
+        <h3>Application de pharmacie mobile</h3>
+        <p>Développement d’une application mobile pour faciliter la gestion des médicaments, avec recherche rapide, disponibilité et informations utiles.</p>
+      </div>
+      
+      <div class="project-card">
+        <h3>Portfolio personnel</h3>
+        <p>Création de mon propre site portfolio avec HTML et CSS, pour présenter mes compétences et réalisations.</p>
+      </div>
+      
+      <div class="project-card">
+        <h3>Design d’un site e-commerce (Figma)</h3>
+        <p>Conception et prototypage d’une interface e-commerce moderne sur Figma, avec un parcours utilisateur fluide et une expérience d’achat intuitive.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+    <section id="experience">
+      <h2 class="section-title">Expériences / Stages</h2>
+      <div class="grid cols-2">
+        <div class="card shadow pad">
+          <div class="row">
+            <div>
+              <h3>Neant</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="activities">
+      <h2 class="section-title">Activités & Centres d'intérêt</h2>
+      <div class="card shadow pad">
+        <div class="tags">
+          <span class="pill">Infographie, Développement et design</span>
+          <span class="pill">Tutorat en Anglais</span>
+          <span class="pill">Basketball</span>
+          <span class="pill">Photographie et Montage Photo</span>
+          <span class="pill">Musique</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact">
+        <div class="card shadow pad">
+          <p>Merci pour votre lecture. Vous pouvez m'écrire directement :</p>
+          <p><a class="btn primary" href="mailto:syelhadjiamedine@gmail.com">✉️ syelhadjiamedine@gmail.com</a></p>
+          <p>Ou me joindre par téléphone : <a href="tel:+221762894105">+221 76 289 41 05</a></p>
+        </div>
+    </section>
+    <section id="socials">
+  <div class="container">
+    <h2 class="section-title">Retrouvez-moi sur les réseaux sociaux</h2>
+    <div class="contact socials">
+      <a href="https://instagram.com/amedine1x" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/+221762894105" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://twitter.com/Amedineee" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com/in/el-hadji-amedine-sy" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+</section>
+  </main>
+  <footer>
+    <div class="container">© <span id="year"></span> · Portfolio étudiant · Fait avec HTML & CSS</div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
